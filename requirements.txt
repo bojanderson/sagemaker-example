@@ -9,12 +9,16 @@ attrs==23.1.0
     #   jsonschema
     #   referencing
     #   sagemaker
+awswrangler==3.4.0
+    # via -r requirements.in
 boto3==1.28.23
     # via
     #   -r requirements.in
+    #   awswrangler
     #   sagemaker
 botocore==1.31.23
     # via
+    #   awswrangler
     #   boto3
     #   s3transfer
 build==0.10.0
@@ -56,17 +60,21 @@ multiprocess==0.70.15
 numpy==1.24.4
     # via
     #   -r requirements.in
+    #   awswrangler
     #   pandas
+    #   pyarrow
     #   sagemaker
     #   scikit-learn
     #   scipy
 packaging==23.1
     # via
+    #   awswrangler
     #   build
     #   sagemaker
 pandas==2.0.3
     # via
     #   -r requirements.in
+    #   awswrangler
     #   sagemaker
 pathos==0.3.1
     # via sagemaker
@@ -82,6 +90,8 @@ ppft==1.7.6.7
     # via pathos
 protobuf==4.24.0
     # via sagemaker
+pyarrow==13.0.0
+    # via awswrangler
 pyproject-hooks==1.0.0
     # via build
 python-dateutil==2.8.2
@@ -125,6 +135,8 @@ tomli==2.0.1
     #   build
     #   pip-tools
     #   pyproject-hooks
+typing-extensions==4.8.0
+    # via awswrangler
 tzdata==2023.3
     # via pandas
 urllib3==1.26.16
