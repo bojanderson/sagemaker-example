@@ -5,3 +5,8 @@ sagemaker
 scikit-learn
 pip-tools
 awswrangler
+ipykernel
+flake8
+black
+isort
+nbqa
